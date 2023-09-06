@@ -1,0 +1,198 @@
+/* RESET CSS */
+*,
+::after,
+::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1.3fr;
+}
+
+/* =========================
+ LEFT SIDE BAR START 
+ ===========================*/
+.left_sidebar {
+	padding: 40px 20px;
+	height: 100vh;
+	border-right: 1px solid #d5d5d5;
+	position: sticky;
+	left: 0;
+	top: 0;
+}
+.logo {
+	height: 35px;
+}
+.small_profile_pic {
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	border: 0.2px solid #eee;
+}
+.sidebar_options {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+	height: 85%;
+	justify-content: space-between;
+}
+.sidebar_icon {
+	font-size: 17px;
+	color: #333;
+	display: flex;
+	justify-self: center;
+	align-items: center;
+	padding: 10px;
+	transition: 0.3s;
+	border-radius: 5px;
+}
+.sidebar_icon span,
+.sidebar_icon img {
+	margin-right: 8px;
+	transition: 0.3s;
+}
+.sidebar_icon:hover {
+	background-color: #eee;
+}
+.sidebar_icon:hover span,
+.sidebar_icon:hover img {
+	transform: scale(1.15);
+}
+
+/* =========================
+ LEFT SIDE BAR END 
+ ===========================*/
+
+/* ==========================
+     MIDDLE SECTION START
+     ========================= */
+.middle_section {
+	padding: 40px 30px;
+}
+.stories_section {
+	display: flex;
+	justify-content: space-around;
+}
+.story {
+	cursor: pointer;
+	position: relative;
+	width: 56px;
+	height: 56px;
+	background-clip: padding-box;
+	border: solid 1.5px #fff;
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.story:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	margin: -3px;
+	border-radius: inherit;
+	background: linear-gradient(35deg, #f9ce34, #ee2a7b);
+}
+.story img {
+	width: 53px;
+	height: 53px;
+}
+.story .user_name {
+	color: #494949;
+	font-size: 12px;
+	margin-top: 8px;
+	text-overflow: ellipsis;
+}
+
+/* ==========================
+     MIDDLE SECTION END
+     ========================= */
+
+/* =========================
+ LEFT SIDE BAR START 
+ ===========================*/
+.right_sidebar {
+	position: sticky;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	border-left: 1px solid #d5d5d5;
+	padding: 40px 20px;
+}
+.right_profile_box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.right_profile_box img {
+	width: 50px;
+	height: 50px;
+	border-radius: 30px;
+	border: 0.2px solid #b9b8b8;
+}
+.right_profile_box p {
+	color: #888888;
+	font-size: 14px;
+}
+.right_profile_box strong {
+	font-size: 15px;
+}
+.blue_btn {
+	font-size: 13px;
+	color: #1ea1f7;
+	font-weight: bold;
+}
+.suggested {
+	display: flex;
+	justify-content: space-between;
+	margin: 15px 0;
+}
+.suggested h4 {
+	color: #888888;
+	font-weight: 500;
+}
+.suggested a {
+	font-size: 14px;
+	font-weight: 500;
+}
+.suggest_profile_box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 15px 0;
+}
+
+.suggest_profile_box img {
+	width: 40px;
+	height: 40px;
+	border-radius: 30px;
+	border: 0.2px solid #b9b8b8;
+}
+.suggest_profile_box p {
+	color: #888888;
+	font-size: 13px;
+}
+.suggest_profile_box strong {
+	font-size: 14px;
+}
+/* =========================
+ LEFT SIDE BAR END 
+ ===========================*/
+
+/* UTILITY CLASSES */
+.d-flex {
+	display: flex;
+}
+.align-center {
+	align-items: center;
+}
