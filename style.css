@@ -344,4 +344,7 @@ body {
 	.post_img {
 		height: 400px;
 	}
+	* {
+		cursor: default;
+	}
 }
